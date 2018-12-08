@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.annaane.mysmarthome.LightActivity"
+    android:background="@drawable/background_lightoff"
+    android:id="@+id/RelativeLayout"
+    android:theme="@style/AppTheme">>
+
+
+    <Button
+        android:id="@+id/lighton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="BRIGHT"
+        android:textSize="15dp"
+        android:layout_marginLeft="63dp"
+        android:layout_marginStart="63dp"
+        android:drawableLeft="@drawable/lightbulbon"
+        android:paddingLeft="15dp"
+        android:background="@drawable/roundbutton_animation"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/textView3"
+        app:layout_constraintLeft_toLeftOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/lightoff"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="OFF"
+        android:textSize="15dp"
+        android:paddingLeft="15dp"
+        android:drawableLeft="@drawable/lightbbulb"
+        android:background="@drawable/roundbutton_animation"
+        android:layout_marginTop="23dp"
+        app:layout_constraintStart_toStartOf="@+id/lighton"
+        app:layout_constraintTop_toBottomOf="@+id/lightmid"
+        app:layout_constraintLeft_toLeftOf="@+id/lighton" />
+
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="42dp"
+        android:text="Lighting"
+        android:textSize="60dp"
+        android:textColor="#ffffff"
+        android:paddingLeft="15dp"
+        android:layout_marginLeft="36dp"
+        android:layout_marginStart="36dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/lightdim"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="19dp"
+        android:text="MID"
+        android:drawableLeft="@drawable/lightbulbon_mid"
+        android:background="@drawable/roundbutton_animation"
+        android:paddingLeft="15dp"
+        app:layout_constraintStart_toStartOf="@+id/textView3"
+        app:layout_constraintTop_toBottomOf="@+id/lighton"
+        app:layout_constraintLeft_toLeftOf="@+id/textView3" />
+
+    <Button
+        android:id="@+id/lightmid"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="29dp"
+        android:text="DIM"
+        android:paddingLeft="15dp"
+        android:background="@drawable/roundbutton_animation"
+        android:drawableLeft="@drawable/lightbuldim"
+        app:layout_constraintStart_toStartOf="@+id/lightdim"
+        app:layout_constraintTop_toBottomOf="@+id/lightdim"
+        app:layout_constraintLeft_toLeftOf="@+id/lightdim" />
+</android.support.constraint.ConstraintLayout>

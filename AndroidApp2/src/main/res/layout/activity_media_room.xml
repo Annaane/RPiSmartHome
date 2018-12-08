@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.annaane.mysmarthome.MediaRoom"
+    android:background="@drawable/mediaroomoff"
+    android:id="@+id/MediaLayout"
+    android:theme="@style/AppTheme">>
+
+
+    <Button
+        android:id="@+id/ON"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="48dp"
+        android:background="@drawable/roundbutton_animation"
+        android:text="ON"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        app:layout_constraintStart_toStartOf="@+id/Source"
+        app:layout_constraintTop_toBottomOf="@+id/textView4"
+        app:layout_constraintLeft_toLeftOf="@+id/Source" />
+
+    <Button
+        android:id="@+id/OFF"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:background="@drawable/roundbutton_animation"
+        android:text="OFF"
+        android:layout_marginLeft="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="69dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/ON"
+        app:layout_constraintLeft_toLeftOf="parent" />
+
+    <Button
+        android:id="@+id/Source"
+        android:layout_width="130dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="76dp"
+        android:background="@drawable/roundbutton_animation"
+        android:onClick="IntentSourceControl"
+        android:text="Source Control"
+        app:layout_constraintLeft_toLeftOf="@+id/OFF"
+        app:layout_constraintStart_toStartOf="@+id/OFF"
+        app:layout_constraintTop_toBottomOf="@+id/OFF" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="38dp"
+        android:text="Media Room"
+        android:textSize="50dp"
+        android:textColor="#ffffff"
+        android:paddingLeft="15dp"
+        android:layout_marginLeft="17dp"
+        android:layout_marginStart="17dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/OFF"
+        app:layout_constraintLeft_toLeftOf="@+id/OFF" />
+
+
+</android.support.constraint.ConstraintLayout>

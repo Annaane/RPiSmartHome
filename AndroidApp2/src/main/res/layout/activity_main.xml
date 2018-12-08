@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bakcground"
+    android:scaleType="centerCrop"
+    android:theme="@style/AppTheme"
+    tools:context="com.example.annaane.mysmarthome.MainActivity">>
+
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:layout_marginTop="62dp"
+        android:text="Choose an option"
+        android:textAlignment="center"
+        android:textColor="#ffffff"
+        android:textSize="65sp"
+        app:layout_constraintBottom_toTopOf="@+id/frameLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+
+    <FrameLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="354dp"
+        android:layout_height="231dp"
+        android:layout_marginBottom="40dp"
+        android:layout_marginEnd="4dp"
+        android:background="#3b000000"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent">
+
+
+        <Button
+            android:id="@+id/mediaroom"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/button_animation"
+            android:drawableLeft="@drawable/mediaroom"
+            android:onClick="IntentMediaRoom"
+            android:paddingLeft="7dp"
+            android:text="Media Room"
+            android:textSize="16dp" />
+
+
+        <Button
+            android:id="@+id/projection"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="88dp"
+            android:background="@drawable/button_animation"
+            android:drawableLeft="@drawable/projection"
+            android:onClick="IntentProjection"
+            android:paddingLeft="7dp"
+            android:text="Movie Projection"
+            android:textSize="16dp" />
+
+
+        <Button
+            android:id="@+id/light"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="165dp"
+            android:background="@drawable/button_animation"
+            android:drawableLeft="@drawable/light"
+            android:onClick="IntentLight"
+            android:paddingLeft="5dp"
+            android:text="Lighting"
+            android:textSize="16dp" />
+
+    </FrameLayout>
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_round2"
+    tools:context="com.example.annaane.mysmarthome.SourceControl"
+    android:orientation="vertical"
+    android:theme="@style/AppTheme"
+    android:id="@+id/relativeLayout">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:text="Source Control"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        android:textSize="50dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageButton
+        android:id="@+id/left"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="124dp"
+        android:layout_marginEnd="28dp"
+        android:background="?android:selectableItemBackground"
+        android:onClick="ShakeIt"
+        android:padding="5dp"
+        android:src="@drawable/anim_leftbutton"
+        app:layout_constraintBottom_toTopOf="@+id/volmin"
+        app:layout_constraintEnd_toStartOf="@+id/up"
+        app:layout_constraintRight_toLeftOf="@+id/up" />
+
+
+    <ImageButton
+        android:id="@+id/right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="56dp"
+        android:background="?android:selectableItemBackground"
+        android:onClick="ShakeIt"
+        android:padding="5dp"
+        android:src="@drawable/anim_rightbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/left" />
+
+    <ImageButton
+        android:id="@+id/volmin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="96dp"
+        android:layout_marginStart="28dp"
+        android:background="?android:selectableItemBackground"
+        android:onClick="ShakeIt"
+        android:padding="2dp"
+        android:src="@drawable/pressed_volmin"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="@+id/left"
+        app:layout_constraintStart_toStartOf="@+id/left" />
+
+
+    <ImageButton
+        android:id="@+id/volup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:background="?android:selectableItemBackground"
+        android:onClick="ShakeIt"
+        android:padding="2dp"
+        android:src="@drawable/pressed_volup"
+        app:layout_constraintLeft_toRightOf="@+id/mute"
+        app:layout_constraintStart_toEndOf="@+id/mute"
+        app:layout_constraintTop_toTopOf="@+id/mute" />
+
+
+    <ImageButton
+        android:id="@+id/mute"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="164dp"
+        android:background="?android:selectableItemBackground"
+        android:onClick="ShakeIt"
+        android:padding="2dp"
+        android:src="@drawable/pressed_mute"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/volmin" />
+
+
+    <ImageButton
+        android:id="@+id/up"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:background="?android:selectableItemBackground"
+        android:onClick="ShakeIt"
+        android:padding="6dp"
+        android:src="@drawable/anim_upbutton"
+        app:layout_constraintBottom_toTopOf="@+id/left"
+        app:layout_constraintEnd_toEndOf="@+id/play"
+        app:layout_constraintRight_toRightOf="@+id/play" />
+
+
+    <ImageButton
+        android:id="@+id/down"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:background="?android:selectableItemBackground"
+        android:onClick="ShakeIt"
+        android:padding="6dp"
+        android:src="@drawable/anim_downbutton"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/play" />
+
+    <ImageButton
+        android:id="@+id/play"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="4dp"
+        android:background="?android:selectableItemBackground"
+        android:onClick="ShakeIt"
+        android:padding="6dp"
+        android:src="@drawable/button_play"
+        app:layout_constraintBottom_toBottomOf="@+id/left"
+        app:layout_constraintEnd_toEndOf="@+id/down"
+        app:layout_constraintRight_toRightOf="@+id/down" />
+
+
+</android.support.constraint.ConstraintLayout>
