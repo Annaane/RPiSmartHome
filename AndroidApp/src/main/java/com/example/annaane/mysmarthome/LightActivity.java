@@ -126,36 +126,7 @@ public class LightActivity extends MainActivity {
             }
         });
 
-        /* Bghit n3yet 3la la fonction hakka
-        OnClickListener(Off, "Off");*/
-
 
     }
 
-/*    public void OnClickListener(Button btn, final String arg)
-    {
-        btn.setOnClickListener(new View.OnClickListener(){
-
-            @Override
-            public void onClick(View v) {
-                //SoundEffect.start();
-                LightActivity.setBackground(getResources().getDrawable(R.drawable.background_lightoff));
-                new Thread(new Runnable() {
-                    @Override
-                    public void run() {
-                        try
-                        {
-                            ConnectionEstablishment(arg);
-                        } catch (UnknownHostException e) {
-                            e.printStackTrace();
-                        } catch (IOException e) {
-                            e.printStackTrace();
-                        }
-                    }
-                }).start();
-
-            }
-        });
-
-    }*/
 }
