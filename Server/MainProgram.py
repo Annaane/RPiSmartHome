@@ -113,12 +113,12 @@ while True:
 			#-----------
 			#    TV
 			#-----------
-				os.system("irsend SEND_ONCE LG_AKB KEY_POWER")
+				os.system("irsend SEND_ONCE LG_AKB KEY_POWER")			#Power ON the TV
 				print('TV ON')
 			#-----------
 			#  AV Reciever
 			#-----------
-				os.system("onkyo -i 0009B0459AA1 system-power=on")        #power on the amplifier
+				os.system("onkyo -i 0009B0459AA1 system-power=on")        #Power ON the AV Reciever 
 			#-----------
 			#   Source
 			#-----------
@@ -158,28 +158,26 @@ while True:
 
 		elif recievedMsg =="ProjectionON":
 			print('\nButton PROJECTION ON was pressed')
-		# Projector
+		# Bring down the projector
 			Projection('relay off 1\n','relay on 0\n')
 		# AV Reciever 
 			os.system('onkyo -i 0009B0459AA1 system-power=on')
 		# Select Source
 			VideoSwitch()
 			time.sleep(1)
-		# GPIO HIGH
-			GPIO.output(37,GPIO.HIGH)
-			print('\nGPIO is : ', GPIO.input(37))
+		# Power ON Projector
+			os.system("irsend SEND_ONCE OPTOMA KEY_POWER")
 			break
 
 					
 		elif recievedMsg=="ProjectionOFF":
 			print('\nButton Projection OFF was pressed')
-		# Projector
+		# Raise the Projector
 			Projection('relay off 0\n','relay on 1\n')
 		# AV Reciever 
 			os.system('onkyo -i 0009B0459AA1 system-power=standby')
-		# GPIO HIGH
-			GPIO.output(37,GPIO.LOW)
-			print('\nGPIO is : ', GPIO.input(37))
+		# Power OFF Projector
+			os.system("irsend SEND_ONCE OPTOMA KEY_POWER")
 			break			
 
 		elif recievedMsg=="Bright":
