@@ -142,7 +142,7 @@ while True:
 			#-----------
 			# Amplifier
 			#-----------
-				os.system("onkyo -i 0009B0459AA1 system-power=standby")   #the amplifi$
+				os.system("onkyo -i 0009B0459AA1 system-power=standby")   #Turn OFF the AV Reciever
 			#-----------
 			#    TV
 			#-----------
