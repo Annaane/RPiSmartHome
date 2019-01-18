@@ -12,11 +12,11 @@ The system's functionnalities are quite basic at this moment, the possibilities 
 
 
 ### Prerequisite :
-- [LIRC] library. (http://www.lirc.org/)
+- [LIRC](http://www.lirc.org/) library. 
 ```
     sudo apt-get install lirc
 ```
-- [Onkyo] library. (https://github.com/miracle2k/onkyo-eiscp)
+- [Onkyo](https://github.com/miracle2k/onkyo-eiscp) library. 
 ```
     easy_install onkyo-eiscp
     onkyo --discover
