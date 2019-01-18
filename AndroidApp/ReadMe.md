@@ -1,3 +1,3 @@
 The android application that controls the smart home.
 
-Java classes are in : AndroidApp/src/main/java/com/example/annaane/mysmarthome/
+Java classes are [here](https://github.com/Annaane/RPiSmartHome/tree/master/AndroidApp/src/main/java/com/example/annaane/mysmarthome).
