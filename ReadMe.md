@@ -30,4 +30,4 @@ The system's functionalities are quite basic at this moment, the possibilities o
 
 
 ### TL;DR :
-Do you want to **_see it_** working ? Check the video :
+Do you want to **_see it_** working ? Check the video : https://youtu.be/DYRsG5hRbvs
